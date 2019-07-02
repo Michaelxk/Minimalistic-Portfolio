@@ -1,0 +1,227 @@
+/*----------------------------------------------
+     ESTILOS GENERALES
+-------------------------------------------------*/     
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body{
+	font-family: 'Roboto', sans-serif;
+	font-family: 'Open Sans', sans-serif;
+	background-color: #f2f2f2;
+}
+a{  
+    cursor: pointer;
+}
+/*----------------------------------------------
+     ESTILOS PARA ENCABEZADO
+-------------------------------------------------*/     
+.container{
+   width: 80%;
+
+}
+
+.logo{
+	margin-top: 20px;
+	margin: 20px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.logo img{
+    margin: auto;
+	width: 80px;
+	height: 80px;
+	max-width: 100%;	
+}
+
+.logo h3{
+    display: fl
+}
+
+.contenedor-logo{
+	border-bottom: 2px solid #504f5c;
+}
+/*----------------------------------------------
+     ESTILOS PARA CONTENIDO
+-------------------------------------------------*/     
+.content-info-journal{
+     
+	 margin-top: 20px;
+     background: url('../img/foto1.jpg');
+     background-size: cover;
+     width: 350px;
+     height: 200px;
+     display: flex;
+     flex-direction: row;
+     flex-wrap: wrap;
+     justify-content: center;
+     align-items: center;
+}
+
+.content-info-portfolio{
+	 margin-top: 20px;
+	 width: 350px;
+     height: 200px;
+     background: url('../img/foto2.jpg');
+     background-size: cover;
+     display: flex;
+     flex-direction: row;
+     flex-wrap: wrap;
+     justify-content: center;
+     align-items: center;
+}
+
+.content-info-services{
+	 margin-top: 20px;
+	 width: 350px;
+     height: 200px;
+     background: url('../img/foto4.jpg');
+     background-size: cover;
+     display: flex;
+     flex-direction: row;
+     flex-wrap: wrap;
+     justify-content: center;
+     align-items: center;
+}
+
+.content-info-profile{
+	 margin-top: 20px;
+	 width: 350px;
+     height: 200px;
+     background: url('../img/foto4.jpg');
+     background-size: cover;
+     display: flex;
+     flex-direction: row;
+     flex-wrap: wrap;
+     justify-content: center;
+     align-items: center;
+}
+
+
+h2{
+	margin: auto;
+	color: #fff;
+}
+
+.content-info-contacto{
+	margin-top: 20px;
+	background: url("../img/fondo-contacto.jpg");
+	width: 350px;
+     height: 200px;
+     display: flex;
+     flex-direction: row;
+     flex-wrap: wrap;
+     justify-content: center;
+     align-items: center;
+
+}
+
+.content-info-contacto h2{
+	border-bottom: 2px solid #fff;
+
+}
+
+.NEWSLETTER{
+	margin-top: 12px;
+	color: #504f5c;
+	border-bottom: 25px solid #504f5c;
+	margin-bottom: 20px;
+}
+
+.icon-mail-alt{
+   color: #504f5c;
+   margin-right: 65px;
+}
+
+.icon-mail-alt:hover{
+   color: #;
+}
+
+.contenedor-texto-newsletter .boton{
+      margin-top: 10px;
+      width: 100%;
+      cursor: pointer;
+}
+
+.contenedor-texto-newsletter .boton:hover{
+        background: #504f5c;
+        color: #fff; 
+}
+
+/*----------------------------------------------
+     ESTILOS PARA FOOTER
+-------------------------------------------------*/
+.contenedor-footer{
+      border-bottom: 2px solid #504f5c;    
+      margin-top: 20px;
+}
+
+footer{
+	float: right;
+}
+
+
+/*----------------------------------------------
+   MEDIA QUERY HASTA LOS 560PX MOBILE 
+-------------------------------------------------*/
+
+@media screen and (max-width: 560px) {
+.logo{
+     display: flex;
+     flex-direction: row;
+     flex-wrap: wrap;
+     justify-content: center;
+     align-items: center;
+}
+
+.logo img{
+    margin: auto;
+}
+
+.NEWSLETTER{
+    font-size: 1.30em;
+}
+
+.footer{
+    margin-top: 10px;
+  
+}
+.footer p{
+    font-size: 10px;
+
+}
+
+/*----------------------------------------------
+   MEDIA QUERY HASTA LOS 560PX
+-------------------------------------------------*/
+
+@media screen and (min-width: 838px max-width: 1024px){
+
+.contenedor-texto-newsletter{
+   font-size: 0.2em;
+}
+
+
+} 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
