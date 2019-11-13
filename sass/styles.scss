@@ -12,44 +12,43 @@ body {
 
 
 .contenedor-logo {
-    display: flex;
-    justify-content: center;
+	display: flex;
+	justify-content: center;
 } 
 
 .logo {
-    margin-top: 40px;
-    margin-bottom: 30px;
+	margin-top: 40px;
+	margin-bottom: 30px;
     img {
-        width: 80px;
-        height: 80px;
-     }
-}
-
-.container-line {
-    hr {
-        background-color: #504f5c;
-       
-        height: 1px;
+			width: 80px;
+			height: 80px;
+    }&:hover {
+      transform: scale(2em);
     }
 }
 
+.container-line {
+	hr {
+			background-color: #504f5c;
+			
+			height: 1px;
+  }
+}
 
 main {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
 }
 
 .content-info-journal {
-    background-image: url('../img/foto1.jpg');
-    @include content;
-  
+	background-image: url('../img/foto1.jpg');
+	@include content;
 }
 
 .content-events {
-    background-image: url('../img/foto2.jpg');
-    @include content;
-
+	background-image: url('../img/foto2.jpg');
+	@include content;
 }
 
 .second {
@@ -57,42 +56,40 @@ main {
 }
 
 .content-info-services {
-    background-image: url('../img/foto4.jpg');
-    @include content;
+	background-image: url('../img/foto4.jpg');
+	@include content;
 }
 .contacto {
-    background-color: #504f5c;
-    @include content;
+	background-color: #504f5c;
+	@include content;
 }
 .content-portfolio {
-    background-image: url('../img/foto4.jpg');
-    @include content;
+	background-image: url('../img/foto4.jpg');
+	@include content;
 }
 
 .NEWSLETTER{
+  display: flex;
 	margin-top: 12px;
 	color: #504f5c;
 	border-bottom: 25px solid #504f5c;
-	margin-bottom: 20px;
+  margin-bottom: 20px;
 }
 
 .icon-mail-alt{
-   color: #504f5c;
-   margin-right: 65px;
-}
-
-.icon-mail-alt:hover{
+  color: #504f5c;
+  margin-right: 65px;
 }
 
 .contenedor-texto-newsletter .boton{
-      margin-top: 10px;
-      width: 100%;
-      cursor: pointer;
+	margin-top: 10px;
+	width: 100%;
+	cursor: pointer;
 }
 
 .contenedor-texto-newsletter .boton:hover{
-        background: #504f5c;
-        color: #fff; 
+	background: #504f5c;
+	color: #fff; 
 }
 
 
@@ -100,8 +97,8 @@ main {
      ESTILOS PARA FOOTER
 -------------------------------------------------*/
 .contenedor-footer{
-    border-bottom: 2px solid #504f5c;    
-    margin-top: 20px;
+	border-bottom: 2px solid #504f5c;    
+	margin-top: 20px;
 }
 
 footer{
@@ -113,29 +110,42 @@ footer{
 -------------------------------------------------*/
 
 @media screen and (max-width: 560px) {
-    .logo{
-         display: flex;
-         flex-direction: row;
-         flex-wrap: wrap;
-         justify-content: center;
-         align-items: center;
-    }
+
+	.logo{
+		display: flex;
+		flex-direction: row;
+		flex-wrap: wrap;
+		justify-content: center;
+		align-items: center;
+  }
     
-    .logo img{
-        margin: auto;
-    }
-    
-    .NEWSLETTER{
-        font-size: 1.30em;
-    }
-    
-    .footer{
-        margin-top: 10px;
-      
-    }
-    .footer p{
-        font-size: 10px;
-    
-    }
+  .logo img{
+		margin: auto;
+		width: 60px;
+		height: 60px;
+  }
+	.row {
+			width: 100%;
+	}
+	.content-info-journal,
+	.content-events, 
+	.content-info-services,
+	.content-portfolio,
+	.contacto,
+	.content-info-news-letter{
+		margin-left: 25px;  
+	
+	} 
+	
+	.content-info-news-letter {
+		.NEWSLETTER{
+			font-size: 1.30em;
+		}
+	}
+	
+	.footer p {
+		font-size: 0.8em;
+	
+	}
 
 }
