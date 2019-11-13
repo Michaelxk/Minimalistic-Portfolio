@@ -1,0 +1,141 @@
+@import 'mixin.scss';
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-size: 1.3em;
+}
+
+
+.contenedor-logo {
+    display: flex;
+    justify-content: center;
+} 
+
+.logo {
+    margin-top: 40px;
+    margin-bottom: 30px;
+    img {
+        width: 80px;
+        height: 80px;
+     }
+}
+
+.container-line {
+    hr {
+        background-color: #504f5c;
+       
+        height: 1px;
+    }
+}
+
+
+main {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.content-info-journal {
+    background-image: url('../img/foto1.jpg');
+    @include content;
+  
+}
+
+.content-events {
+    background-image: url('../img/foto2.jpg');
+    @include content;
+
+}
+
+.second {
+  margin-top: 20px;
+}
+
+.content-info-services {
+    background-image: url('../img/foto4.jpg');
+    @include content;
+}
+.contacto {
+    background-color: #504f5c;
+    @include content;
+}
+.content-portfolio {
+    background-image: url('../img/foto4.jpg');
+    @include content;
+}
+
+.NEWSLETTER{
+	margin-top: 12px;
+	color: #504f5c;
+	border-bottom: 25px solid #504f5c;
+	margin-bottom: 20px;
+}
+
+.icon-mail-alt{
+   color: #504f5c;
+   margin-right: 65px;
+}
+
+.icon-mail-alt:hover{
+}
+
+.contenedor-texto-newsletter .boton{
+      margin-top: 10px;
+      width: 100%;
+      cursor: pointer;
+}
+
+.contenedor-texto-newsletter .boton:hover{
+        background: #504f5c;
+        color: #fff; 
+}
+
+
+/*----------------------------------------------
+     ESTILOS PARA FOOTER
+-------------------------------------------------*/
+.contenedor-footer{
+    border-bottom: 2px solid #504f5c;    
+    margin-top: 20px;
+}
+
+footer{
+  float: right;
+}
+
+/*----------------------------------------------
+   MEDIA QUERY HASTA LOS 560PX MOBILE 
+-------------------------------------------------*/
+
+@media screen and (max-width: 560px) {
+    .logo{
+         display: flex;
+         flex-direction: row;
+         flex-wrap: wrap;
+         justify-content: center;
+         align-items: center;
+    }
+    
+    .logo img{
+        margin: auto;
+    }
+    
+    .NEWSLETTER{
+        font-size: 1.30em;
+    }
+    
+    .footer{
+        margin-top: 10px;
+      
+    }
+    .footer p{
+        font-size: 10px;
+    
+    }
+
+}
